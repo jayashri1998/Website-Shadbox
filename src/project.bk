@@ -1,0 +1,473 @@
+import React from 'react';
+import Solution from "../../assets/Image/Solution.jpg";
+import Approch from "../../assets/Image/Approch.jpg"
+
+
+
+const Card = () => {
+
+  return (
+    <div className='bg-white'>
+    <div className="flex items-center justify-center mt-12 bg-white ">
+      <a className="relative block w-1/4 bg-gray-900 group" href="#">
+        <img className="absolute inset-0 object-cover w-full h-full group-hover:opacity-50" src={Solution} alt="Solution" />
+        <div className="relative p-5">
+          <div className="mt-40">
+            <div className="transition-all transform translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+              <div className="p-2">
+                <p className="text-lg text-white">
+                  Give the Solution
+                </p>
+                <button className="px-4 py-2 text-sm text-white bg-blue-600 rounded-lg">
+                  Visit site
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    </div>
+  );
+};
+
+export default Card;
+
+
+
+//////
+<div className="container md:w-1/2 lg:w-1/3 ml-4 mt-4  bg-white shadow-lg ">
+      <div
+        className="content relative w-90 md:w-400 overflow-hidden"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <a href="/" target="_blank" className="block group">
+          <div className={`content-overlay bg-opacity-100 bg-gray-100 absolute h-full w-full top-0 left-0 transition-opacity duration-400 rounded-lg`}></div>
+          <img
+            src={Solution}
+
+
+            alt=""
+            className={`content-image w-full rounded-lg transform scale-100 transition-transform 
+            duration-300 ${hovered ? 'group-hover:scale-110 hover:scale-110' : ''}
+             transition-opacity ${hovered ? 'opacity-50' : 'opacity-100'}`}
+           />
+          <div className={`content-details absolute left-2/4 mx-2 mr-2 w-full top-3/4 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2`}>
+            <h3 className="content-title text-white text-left font-bold text-2xl ">Solution</h3>
+            <p className="content-text text-white text-sm">
+         
+            </p>
+            {hovered && (
+              <>
+                {showFullDescription ? (
+              
+                  <p className="text-white absolute text-sm w-full mt-8 text-justify top-1">{fullDescription}</p>
+                ) : (
+                  <a onClick={handleReadMore} className="text-white text-sm">Read More</a>
+                )}
+              </>
+            )}
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+
+    <div className='flex '>
+    <div className="container md:w-1/2 lg:w-1/3 ml-32 mt-4 bg-white shadow-lg">
+      <div
+        className="content relative w-90 md:w-400 overflow-hidden"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <a href="/" target="_blank" className="block group">
+          <div className={`content-overlay bg-opacity-100 bg-gray-100 absolute h-full w-full top-0 left-0 transition-opacity duration-400 rounded-lg`}></div>
+          <img
+            src={Success}
+            alt=""
+            className={`content-image w-full rounded-lg transform scale-100 transition-transform duration-300 ${hovered ? 'group-hover:scale-110 hover:scale-110' : ''} transition-opacity ${hovered ? 'opacity-50' : 'opacity-100'}`}
+         />
+          <div className={`content-details absolute left-2/4 mx-2 mr-2 w-full top-3/4 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2`}>
+            <h3 className="content-title text-white text-left font-bold text-2xl ">Success Stories</h3>
+            <p className="content-text text-white text-sm">
+         
+            </p>
+            {hovered && (
+              <>
+                {showFullDescription ? (
+              
+                  <p className="text-white absolute text-sm w-full mt-8 text-justify top-1">{fullDescription}</p>
+                ) : (
+                  <a onClick={handleReadMore} className="text-white text-sm">Read More</a>
+                )}
+              </>
+            )}
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div className="container md:w-1/2 lg:w-1/3 ml-4 mt-4  bg-white my-4 shadow-lg">
+      <div
+        className="content relative w-90 md:w-400  overflow-hidden"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <a href="/" target="_blank" className="block group">
+          <div className={`content-overlay bg-opacity-100 bg-gray-100 absolute h-full w-full top-0 left-0 transition-opacity duration-400 rounded-lg`}></div>
+          <img
+            src={Imdustries}
+            alt=""
+            className={`content-image w-full rounded-lg transform  shadow-2xl scale-100 transition-transform duration-300 ${hovered ? 'group-hover:scale-110 hover:scale-110' : ''} transition-opacity ${hovered ? 'opacity-50' : 'opacity-100'}`}
+          />
+          <div className={`content-details absolute left-2/4 mx-2 mr-2 w-full top-3/4 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2`}>
+            <h3 className="content-title text-white text-left font-bold text-2xl ">Industries</h3>
+            <p className="content-text text-white text-sm">
+         
+            </p>
+            {hovered && (
+              <>
+                {showFullDescription ? (
+              
+                  <p className="text-white absolute text-sm w-full mt-8 text-justify top-1">{fullDescription}</p>
+                ) : (
+                  <a onClick={handleReadMore} className="text-white text-sm">Read More</a>
+                )}
+              </>
+            )}
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+    
+/////////////
+
+      <div className="md:w-1/2 lg:w-1/3 mt-4 mx-2">
+    <div className="content relative w-full md:w-90 mx-auto overflow-hidden shadow-lg">
+            <a href="/" target="_blank" className="block group">
+              <div className={`content-overlay bg-opacity-100 bg-gray-100 absolute h-full w-full top-0 left-0 transition-opacity duration-400 rounded-lg`}></div>
+              <div className="relative group">
+                <img
+                  src={Solution}
+                  alt=""
+                  className="w-full rounded-lg transition-transform duration-300 transform scale-100 group-hover:scale-110"
+                />
+                <div className="absolute bottom-0 w-full h-full bg-black bg-opacity-50"></div>
+              </div>
+
+              <div className={`content-details absolute left-2/4 mx-2 mr-2 w-full top-3/4 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2`}>
+                <h3 className="content-title text-white text-left font-bold text-2xl ">Solution</h3>
+                <p className="content-text text-white text-sm">
+
+                </p>
+                {hovered && (
+                  <>
+                    {showFullDescription ? (
+
+                      <p className="text-white absolute text-sm w-full mt-8 text-justify top-1">{fullDescription}</p>
+                    ) : (
+                      <a onClick={handleReadMore} className="text-white text-sm">Read More</a>
+                    )}
+                  </>
+                )}
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className='flex flex-col md:flex-row justify-center'>
+      <div className="md:w-1/2 lg:w-1/3 mt-4 mx-2">
+        <div className="content relative w-full md:w-90 mx-auto overflow-hidden shadow-lg">
+            <a href="/" target="_blank" className="block group">
+              <div className={`content-overlay bg-opacity-100 bg-gray-100 absolute h-full w-full top-0 left-0 transition-opacity duration-400 rounded-lg`}></div>
+              <div className="relative group">
+                <img
+                  src={Success}
+                  alt=""
+                  className="w-full rounded-lg transition-transform duration-300 transform scale-100 group-hover:scale-110"
+                />
+                <div className="absolute bottom-0 w-full h-full bg-black bg-opacity-50"></div>
+              </div>
+
+              <div className={`content-details absolute left-2/4 mx-2 mr-2 w-full top-3/4 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2`}>
+                <h3 className="content-title text-white text-left font-bold text-2xl ">Success Stories</h3>
+                <p className="content-text text-white text-sm">
+
+                </p>
+                {hovered && (
+                  <>
+                    {showFullDescription ? (
+
+                      <p className="text-white absolute text-sm w-full mt-8 text-justify top-1">{fullDescription}</p>
+                    ) : (
+                      <a onClick={handleReadMore} className="text-white text-sm">Read More</a>
+                    )}
+                  </>
+                )}
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div className="md:w-1/2 lg:w-1/3 mt-4 mx-2">
+        <div className="content relative w-full md:w-90 mx-auto overflow-hidden shadow-lg">
+            <a href="/" target="_blank" className="block group">
+              <div className={`content-overlay bg-opacity-100 bg-gray-100 absolute h-full w-full top-0 left-0 transition-opacity duration-400 rounded-lg`}></div>
+              <div className="relative group">
+                <img
+                  src={Industries}
+                  alt=""
+                  className="w-full rounded-lg transition-transform duration-300 transform scale-100 group-hover:scale-110"
+                />
+                <div className="absolute bottom-0 w-full h-full bg-black bg-opacity-50"></div>
+              </div>
+
+              <div className={`content-details absolute left-2/4 mx-2 mr-2 w-full top-3/4 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2`}>
+                <h3 className="content-title text-white text-left font-bold text-2xl ">Industries</h3>
+                <p className="content-text text-white text-sm">
+                </p>
+                {hovered && (
+                  <>
+                    {showFullDescription ? (
+
+                      <p className="text-white absolute text-sm w-full mt-8 text-justify top-1">{fullDescription}</p>
+                    ) : (
+                      <a onClick={handleReadMore} className="text-white text-sm">Read More</a>
+                    )}
+                  </>
+                )}
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      nav////
+      import { useState } from 'react';
+import Logo from '../../assets/Image/Img.ico';
+import { IoChevronDown } from "react-icons/io5";
+import { MdMobileFriendly } from "react-icons/md";
+import { IoIosMenu } from "react-icons/io";
+
+const Navbar = () => {
+  let Links = [
+    { name: "HOME", link: "/" },
+    {
+      name: "SERVICE",
+      link: "/service",
+      sublinks: [
+        { name: 'Mobile App Development', link: "/service/mobileapp" },
+        { name: 'Web Development', link: "/service/webdevelopment" },
+        { name: 'Hire Software', link: "/service/hiresoftware" },
+        { name: 'Ruby on Rails Integration && Migration ', link: "/service/integration" },
+        { name: 'UI/UX Design ', link: "/service/uxdesign" }
+      ]
+    },
+    { name: "ABOUT", link: "/about" },
+    { name: "CAREER", link: "/career" },
+    { name: "BLOG", link: "/blog" },
+    { name: "CONTACT", link: "/contact" }
+  ];
+
+  let [open, setOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleSubmenuToggle = () => {
+    if (isMobile) {
+      setOpen(true);
+    }
+  };
+
+  return (
+    <div className='shadow-md w-full fixed top-0 left-0 z-10 mt-1'>
+      <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+
+        <div className='font-bold text-2xl cursor-pointer flex items-center gap-4'>
+          <span className="icon">
+            <img src={Logo} alt="Logo" className="w-8 h-8 rounded" />
+          </span>
+          <span>Shadbox</span>
+        </div>
+
+        <div
+        onClick={() => setOpen(!open)}
+        className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+      >
+        <IoIosMenu  name={open ? "close" : "menu"}></IoIosMenu>
+      </div>
+
+        <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          open ? "top-20 " : "top-[-490px]"
+        }`}
+      >
+          {Links.map((link, index) => (
+            <li key={index} className='md:ml-8 text-xl md:my-0 my-7 font-semibold relative group'
+              onMouseEnter={() => link.name === 'SERVICE' && setOpen(true)}
+              onMouseLeave={() => link.name === 'SERVICE' && setOpen(false)}
+            >
+              <a href={link.link} className='text-gray-800 hover:text-blue-400  active:text-blue-600  duration-500'>
+                <div className='flex items-center '>
+                  {link.name} {link.name === 'SERVICE' && <IoChevronDown className='w-8 h-4 '  onClick={handleSubmenuToggle} />}
+                </div>
+              </a>
+              {link.sublinks && link.name === 'SERVICE' && (
+                <ul
+                  className={`absolute ${
+                    open ? 'block' : 'hidden'}  bg-gray-50 text-gray-800 border rounded-md p-2 mt-2 space-y-2  w-80 `} >
+                  {link.sublinks.map((sublink, subIndex) => (
+                    <li key={subIndex}>
+                      <a href={sublink.link} className='hover:text-blue-400 duration-500'>
+                        {sublink.name === 'Mobile App Development' && (
+                          <div className='flex items-center'>
+                            <MdMobileFriendly className='mr-2' />
+                            {sublink.name}
+                          </div>
+                        )}
+                        {sublink.name !== 'Mobile App Development' && (
+                          <div>{sublink.name}</div>
+                        )}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+            </li>
+          ))}
+          <a href='/hiredeveloper'><button className='btn bg-blue-600 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static hover:text-black'>Hire Developer</button></a>
+        </ul>
+
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////
+OPening Cards
+
+
+<div className=" mx-8 max-w-sm mb-6 text-center border-2 rounded-lg px-5 py-8 hover:shadow-2xl transition-shadow duration-300 font-roboto">
+            <h1 className="font-medium text-2xl my-3 hover:text-red-500 transition duration-300">
+              ReactJs Developer 
+            </h1>
+            <h2 className="text-start my-2 text-lg font-medium">Key Responsibilties:</h2>
+            <ul className="list-disc text-start tracking-wide leading-8">
+              <li>Develop and maintain robust and responsive user interfaces using React.</li>
+              <li>Ensure the technical feasibility of UI/UX designs.</li>
+              <li>Optimize applications for maximum speed and scalability.</li>
+  
+            </ul>
+           <div className="text-start my-2">
+           <h2 className="font-medium">Skills:</h2>
+           <h3>HTML,CSS,SASS,JavaScript,JSX,API</h3>
+           </div>
+           <div className="text-start my-2">
+              <h2 className="font-medium">Experience:</h2>
+              <h3>0-2 years <span className="text-gray-500">(required)</span></h3>
+           </div>
+              
+           
+          </div>
+       
+     
+        <div className=" mx-8 max-w-sm mb-6 text-center border-2 rounded-lg px-5 py-8 hover:shadow-2xl transition-shadow duration-300 font-roboto">
+          <h1 className="font-medium text-2xl my-3 hover:text-red-500 transition duration-300">
+            Oracle Developer
+          </h1>
+          <h2 className="text-start my-2 text-lg font-medium">Key Responsibilties:</h2>
+          <ul className="list-disc text-start tracking-wide leading-8">
+            <li>Develop and maintain robust and responsive user interfaces using React.</li>
+            <li>Ensure the technical feasibility of UI/UX designs.</li>
+            <li>Optimize applications for maximum speed and scalability.</li>
+
+          </ul>
+         
+         <div className="text-start my-2">
+         <h2 className="font-medium">Skills:</h2>
+         <h3>HTML,CSS,SASS,JavaScript,JSX,API</h3>
+         </div>
+         <div className="text-start my-2">
+            <h2 className="font-medium">Experience:</h2>
+            <h3>0-2 years <span className="text-gray-500">(required)</span></h3>
+         </div>
+            
+         
+        </div>
+  
+    
+      <div className=" mx-8 max-w-sm mb-6 text-center border-2 rounded-lg px-5 py-8 hover:shadow-2xl transition-shadow duration-300 font-roboto">
+        <h1 className="font-medium text-2xl my-3 hover:text-red-500 transition duration-300">
+        Ruby on Rails
+        </h1>
+        <h2 className="text-start my-2 text-lg font-medium">Key Responsibilties:</h2>
+        <ul className="list-disc text-start tracking-wide leading-8">
+          <li>Develop and maintain robust and responsive user interfaces using React.</li>
+          <li>Ensure the technical feasibility of UI/UX designs.</li>
+          <li>Optimize applications for maximum speed and scalability.</li>
+
+        </ul>
+       
+       <div className="text-start my-2">
+       <h2 className="font-medium">Skills:</h2>
+       <h3>HTML,CSS,SASS,JavaScript,JSX,API</h3>
+       </div>
+       <div className="text-start my-2">
+          <h2 className="font-medium">Experience:</h2>
+          <h3>0-2 years <span className="text-gray-500">(required)</span></h3>
+       </div>
+          
+       
+      </div>
+
+      ///////////////////////////////////////////////////////////////
+      //////////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////
+
+
+
+      Navbar.JSX
+      <ul
+              className={`absolute ${
+                serviceDropdownOpen ? 'block' : 'hidden'
+              }  bg-white z-10  text-gray-800 border shadow-lg w-[800px] border-gray-200 rounded-lg p-2 mt-2 items-center justify-center   text-xl`}
+            >
+            <img src={DropDown} alt='' className='w-96 h-56 '/>
+              {/* Submenu items for SERVICE */}
+              <li>
+                <a href="/service/mobileapp" className="hover:text-blue-400 text-lg font-roboto flex gap-2 duration-700 leading-8"> <MdMobileFriendly className='w-8 h-8'/>
+                  Mobile App Development
+                </a>
+                </li>
+               <li>
+                <a href="/service/webdevelopment" className= "hover:text-blue-400  text-lg font-roboto gap-2 flex duration-700 leading-8">
+                <GrPersonalComputer className='w-8 h-8'/> Web Development
+                </a>
+                </li>
+                <li>
+                <a href="/service/hiresoftware" className="hover:text-blue-400 gap-2  text-lg font-roboto flex duration-700 leading-8">
+                <MdDeveloperMode className='w-8 h-8' />   Hire Software Developer
+                </a>
+                </li>
+                <li>
+                <a href="/service/integration" className="hover:text-blue-400  text-lg font-roboto gap-2 flex duration-700 leading-8">
+               <SiRubyonrails className='w-8 h-8' /> Ruby on Rails Project
+                </a>
+                </li>
+     
+            <li>
+              <a href="/service/uxdesign" className="hover:text-blue-400  text-lg font-roboto flex gap-2 duration-700">
+              <SiAltiumdesigner className='w-8 h-8'/> UI/UX Design 
+              </a>
+            </li>
+             
+            </ul>
+            </div>
